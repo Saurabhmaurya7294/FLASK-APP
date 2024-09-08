@@ -4,9 +4,9 @@ from flask import Flask, request, jsonify, render_template, redirect
 app = Flask(__name__)
 
 # Configuration
-MAX_REQUESTS = 5  # Maximum requests allowed per IP
+MAX_REQUESTS = 15  # Maximum requests allowed per IP
 TIME_FRAME = 60  # Time frame in seconds for rate limiting per IP
-REQUEST_LIMIT = 10  # Global request limit
+REQUEST_LIMIT = 100000  # Global request limit
 DUMMY_SITE_URL = "https://example-dummy-site.com"  # URL for redirection
 
 # Dictionary to store IPs and their request counts
