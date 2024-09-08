@@ -3,47 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Server App</title>
+    <title>Parallax Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('https://img.youtube.com/vi/ZhC3u7V2MBU/sddefault.jpg');
+    opacity: calc(59);
+}
+
+/* Projects Section Background */
+#projects {
+    background-image: url('projects-bg.jpg');
+}
+
+/* Contact Section Background */
+#contact {
+    background-image: url('contact-bg.jpg');
+
+}
+
+/* Adjusting the padding for all sections */
+section {
+    padding: 80px 0;
+}
+
+/* Smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+    font-weight: bold;
+}
+#hd-body{
+    text-shadow: 2px 2px 5px rgb(24, 195, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-text{
+    color: greenyellow;
+}
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">CYBER HEXAD</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CYBER HEXAD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="jumbotron">
-            <h1 class="display-4">Welcome to My CYBER HEXAD SERVER!</h1>
-            <p class="lead">This is a simple WEB application .</p>
-            <hr class="my-4">
-            <p>Click the button.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <!-- Hero Section -->
+    <header class="parallax hero d-flex align-items-center justify-content-center">
+        <div class="text-center " id="hd-body">
+            <h1 class="display-4 text-white">WE ARE CYBER HEXAD</h1>
+            <p class="lead text-white">DDOS PROTECTION SYSTEM BUILDIN</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
         </div>
-    </div>
+    </header>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; SIH CYBER HEXAD</p>
+    <HR></HR>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About us</h2>
+                <p>WE ARE STUDENT OF CYBER-SECURITY .<br><br><hr>
+                    TEAM LEADER : SAURABH <br><br>
+                    TEAM MEMBERS : <br> 1. SHIWANGI <br> 2.  VISHU<br> 3. SANKALP<br> 4. ANIKET<br> 5. ALMAN
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://hackernoon.com/images/xwRTMTtsfYNZdN4zVqQuYZcuZrs1-2b136dx.png" alt="Your Photo" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="parallax bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://th.bing.com/th/id/OIP.z8abWv6f8lsG4s5M98n2gwHaDF?w=2000&h=835&rs=1&pid=ImgDetMain" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque accusamus ratione facilis assumenda vitae nobis harum, commodi sunt eos sequi eius nostrum quaerat aperiam dolore error tenetur porro! Magni!.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://th.bing.com/th/id/OIP.e4G27ERpoTv3wxim5pB8TwHaD1?w=2007&h=1038&rs=1&pid=ImgDetMain" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam praesentium dolore doloribus voluptates. Sunt necessitatibus officia laborum, eaque at blanditiis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://d1tcczg8b21j1t.cloudfront.net/strapi-assets/ddos_protection_e5a5b59be7.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis necessitatibus eveniet! Commodi, corrupti veritatis!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Skills</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>HTML/CSS</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>JavaScript</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Python</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Flask</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="parallax bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 CYBER HEXAD . All Rights Reserved.</p>
     </footer>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js">
+
+        // JavaScript for additional functionality (optional)
+// For example, you could add a smooth scrolling effect for anchor links
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
